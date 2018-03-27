@@ -23,30 +23,47 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
+            android:id="@+id/btn_home"
             style="@style/HomePageButton"
+            android:onClick="onNavigationClick"
             android:text="首页" />
 
         <Button
+            android:id="@+id/btn_popular"
             style="@style/HomePageButton"
+            android:onClick="onNavigationClick"
             android:text="时下流行" />
 
         <Button
+            android:id="@+id/btn_subscribe"
             style="@style/HomePageButton"
+            android:onClick="onNavigationClick"
             android:text="订阅内容" />
 
         <Button
+            android:id="@+id/btn_activity"
             style="@style/HomePageButton"
+            android:onClick="onNavigationClick"
             android:text="活动" />
 
         <Button
+            android:id="@+id/btn_media"
             style="@style/HomePageButton"
+            android:onClick="onNavigationClick"
             android:text="媒体库" />
     </LinearLayout>
 
     <View
+        android:id="@+id/v_1"
         android:layout_width="match_parent"
         android:layout_height="4px"
         android:background="#bcbcbc"
         app:layout_constraintBottom_toTopOf="@+id/ll_navigation" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/v_1" />
 
 </android.support.constraint.ConstraintLayout>
